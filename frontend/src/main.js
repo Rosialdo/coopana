@@ -7,6 +7,11 @@ import router from './router'
 import store from './store'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
+import './assets/formulate.css'
+import VueFormulate from '@braid/vue-formulate'
+
+Vue.use(VueFormulate)
+
 Vue.use(VueGoogleMaps, {
   load: {
     libraries: 'places'

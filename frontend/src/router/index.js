@@ -5,6 +5,7 @@ import Profile from '@/components/Profile'
 import Tables from '@/components/Tables'
 import Maps from '@/components/Maps'
 import BadGateway from '@/components/BadGateway'
+import Cadastro from '@/components/Cadastro'
 
 
 Vue.use(Router);
@@ -44,9 +45,15 @@ export default new Router({
       component: BadGateway
     },
     {
+      path: '/Cadastro',
+      name: 'Cadastro',
+      props: {page: 6},
+      component: Cadastro
+    },
+    {
       path: '*',
-      props: { page: 5 },
+      props: { page: 6 },
       redirect: '/404'
-    }
+    },
   ]
 })
